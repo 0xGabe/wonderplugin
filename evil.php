@@ -1,6 +1,4 @@
 <?php
-    echo "randosndoafasfaasda";
-    echo "";
     $descriptorspec = array(
     0 => array("pipe", "r"),  // stdin
     1 => array("pipe", "w"),  // stdout
